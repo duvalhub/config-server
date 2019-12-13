@@ -1,0 +1,13 @@
+app:
+  name: config-server
+  group: duvalhub
+build:
+  builder: maven
+  container: jre
+deploy:
+  port: 8080
+docker:
+  registry: docker.io
+  namespace: duvalhub
+  repository: config-server
+
