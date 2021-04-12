@@ -1,14 +1,10 @@
-info:
-  component: Config Server
+encrypt.key: ${ENCRYPT_KEY_OTHER}
+
 spring.cloud:
-    config:
-      server:
-        git:
-          uri: https://github.com/duvalhub/config-repo
-
-spring.application:
-    name: configserver
-
-management.endpoints.web.exposure.include: "*"
-
-spring.jackson.serialization.indent_output: true
+  config:
+    server:
+      git:
+        uri: "${CONFIG_REPO}"
+spring.security.user:
+  name: ${USERNAME}
+  password: ${PASSWORD}
