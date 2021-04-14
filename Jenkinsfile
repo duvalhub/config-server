@@ -1,5 +1,5 @@
 @Library([
     'shared-library@improvement/deploy-config-server',
-    'continuous-deployment-library@improvement/default-to-build-and-deploy-to-dev'
+    'continuous-deployment-library@fix/support-secret-file-injection'
 ]) _
 continuousDeployment()
