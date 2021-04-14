@@ -1,10 +1,12 @@
-encrypt.key: ${ENCRYPT_KEY_OTHER}
+encrypt.key: ${ENCRYPT_KEY}
 
 spring.cloud:
   config:
     server:
       git:
         uri: "${CONFIG_REPO}"
+        username: "${CONFIG_USERNAME}"
+        password: "${CONFIG_PASSWORD}"
 spring.security.user:
   name: ${USERNAME}
   password: ${PASSWORD}
